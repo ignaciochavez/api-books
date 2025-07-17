@@ -49,7 +49,7 @@ export class UsersController {
         res.status(HttpStatus.BAD_REQUEST).send(this.message);
       } else {
         const accessToken = await this.authService.createToken({ sub: authenticate.idUser, username: authenticate.email });
-        res.status(HttpStatus.OK).send(accessToken.access_token);
+        res.status(HttpStatus.OK).send(accessToken);
       }
       return;
     } catch (error: any) {

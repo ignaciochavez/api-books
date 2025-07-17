@@ -1,10 +1,16 @@
 ## API-BOOKS
 
-API de libros con nest js y type orm
+API de libros con nest js v11.0.7 y type orm
+
+## Pre requisitos
+
+Tener la bd creada con segun el repositorio: https://github.com/ignaciochavez/sql-books/tree/develop
 
 ## Variables de ambientes de proyecto
 
-```ejemplos
+Estas variables de ambientes deben ser configuradas en un archivo .env o en un docker file
+
+```
 NODE_ENV=development
 PORT=10001
 DB_HOST=localhost
@@ -16,7 +22,7 @@ JWT_SECRET=c6a39a9c-7110-41f9-b1a1-08950fc9c77a
 JWT_EXPIRATION_TIME=8h
 ```
 
-## Compile and run the project
+## Compilar y ejecutar proyecto
 
 ```bash
 # development
@@ -51,4 +57,4 @@ $ mau deploy
 
 ## Stay in touch
 
-- Author - [ignacio chavez](https://twitter.com/kammysliwiec)
+- Author - [ignacio chavez](https://github.com/ignaciochavez)
